@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>The HTML5 Herald</title>
+  <title>Document</title>
+
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
@@ -14,6 +15,38 @@
 </head>
 
 	<body>
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-product-list-container"></div>
+                    <hr>
+                    <div class="container">
+                        <form>
+                            <div class="form-group row">
+                                <label for="client-name" class="col-4 col-form-label">Your name:</label>
+                                <input class="form-control col-8" type="text" id="client-name" required>
+                            </div>
+                            <div class="form-group row">
+                                <label for="client-email" class="col-4 col-form-label">Your email:</label>
+                                <input class="form-control col-8" type="email" id="client-email" required>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary order">Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>
